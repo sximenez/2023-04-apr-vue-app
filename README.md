@@ -1,3 +1,5 @@
+[Live demo](https://sximenez.github.io/vue-app/)
+
 # Vue
 
 Source: [Vue](https://vuejs.org/guide/introduction.html)
@@ -418,4 +420,4 @@ export default defineConfig({
 
 A workflow is a set of instructions that run after a push command.
 
-In this case, we tell Github to look for the dist output folder.
+In this case, we tell Github to look for the dist output folder and deploy from there.
