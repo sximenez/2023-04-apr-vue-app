@@ -6,8 +6,6 @@ Vue is a JavaScript library to develop user interfaces.
 
 Like React, it is based on a component-based approach.
 
----
-
 ## Single-file component
 
 Every component in Vue can be developed within a single `.vue` file : logic, content and style.
@@ -40,8 +38,6 @@ button {
 </style>
 ```
 
----
-
 ## API declaration
 
 Logic in Vue can be declared using either one of two styles :
@@ -53,15 +49,11 @@ Both styles can be used.
 
 However, for readability and reusibility reasons, it is recommended to stick with the composition style.
 
----
-
 ## Declarative rendering
 
 The core feature of Vue is `declarative rendering`.
 
 By encapsulating HTML within `template`, any state change happening at the logic level with automatically render.
-
----
 
 ### State updates (composition style)
 
@@ -150,8 +142,6 @@ const message = ref('Hello World!')
 </template>
 ```
 
----
-
 ## Data binding and directives
 
 Mustaches `{{ hello }}` are the most basic form of binding state and data in Vue.
@@ -183,8 +173,6 @@ const test = "<span style='color:red'>hello world</span>";
 It is best to never use v-html on user-provided content.
 ```
 
----
-
 ### v-bind
 
 The `v-bind` directive and its shorthand `:` are the most frequent data binding attribute in Vue.
@@ -202,8 +190,6 @@ We can bind an id, a class, a boolean, an object, even functions.
   {{hello(data)}}
 </div>
 ```
-
----
 
 ### Event listeners
 
@@ -239,8 +225,6 @@ Event have modifiers like `@submit.prevent="onSubmit"`, which will apply an `eve
 
 Modifiers can be chained, but word order is determinant.
 
----
-
 ### Form bindings
 
 `v-model` allows two-way bindings: an event listener like `@input` and a `v-bind` for rendering combined.
@@ -260,13 +244,9 @@ const text = ref('')
 </template>
 ```
 
----
-
 ### Conditionals
 
 Conditionals can be declared using `v-if`, `v-else` or `v-else-if`.
-
----
 
 ### List iteration
 
@@ -314,15 +294,11 @@ function removeTodo(todo) {
 </template>
 ```
 
----
-
 ### computed()
 
 When we have an element meeting two or more criteria, we can use the `computed()` property to target it.
 
 This notion is a bit more tricky to grasp.
-
----
 
 ### Lifecycle hooks
 
@@ -330,17 +306,11 @@ Components have a "lifecycle", meaning we can target them when they are mounted,
 
 Some corresponding hooks are `onMounted`, `onUpdated` and `onUnmounted`.
 
----
-
 ### Watchers
-
----
 
 ### Components
 
 Like in React, components in Vue have a similar logic and template syntax `<Component />`.
-
----
 
 ### Props
 
@@ -357,8 +327,6 @@ const props = defineProps({
 })
 </script>
 ```
-
----
 
 ### Emits
 
@@ -382,8 +350,6 @@ On the parent, we can access the data via `@response="(e) => textComponent = e"`
   <p>{{ childMsg }}</p>
 </template>
 ```
-
----
 
 ### Slots
 
@@ -416,8 +382,6 @@ A parent and a child can also share template fragments!
   <ChildComp></ChildComp>
 </template>
 ```
-
----
 
 ## Github Pages Deployment
 
