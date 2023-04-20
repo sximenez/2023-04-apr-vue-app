@@ -410,7 +410,7 @@ npm run preview
 ```Javascript
 export default defineConfig({
   plugins: [vue()],
-  base: '/<REPO>/',
+  base: 'vue-app',
 })
 ```
 
