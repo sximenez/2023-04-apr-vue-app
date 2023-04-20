@@ -416,6 +416,6 @@ export default defineConfig({
 
 ### 4. Set workflow
 
-Github provides a standard workflow for the creation of a static site.
+A workflow is a set of instructions that run after a push command.
 
-Commit and watch the app deploy in the Actions tab.
+In this case, we tell Github to look for the dist output folder.
