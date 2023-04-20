@@ -385,14 +385,37 @@ A parent and a child can also share template fragments!
 
 ## Github Pages Deployment
 
-Source: [Github](https://github.com/marketplace/actions/vue-to-github-pages)
+Source: [Vite](https://vitejs.dev/guide/static-deploy.html)
 
-### 1. Config file
+### 1. Build the app
+
+Since I'm using npm, I can run:
 
 ```Javascript
-// Using Vite + Vue 3, add to your vite.config.js
-export default defineConfig({
-  ... // Already existing configurations
-  base: '/YourRepoName/'
-});
+npm run build
 ```
+
+This creates a `dist` folder with the output files.
+
+### 2. Test the dist output locally
+
+To test the dist folder locally:
+
+```Javascript
+npm run preview
+```
+
+### 3. Set config file
+
+```Javascript
+export default defineConfig({
+  plugins: [vue()],
+  base: '/<REPO>/',
+})
+```
+
+### 4. Set workflow
+
+Github provides a standard workflow for the creation of a static site.
+
+Commit and watch the app deploy in the Actions tab.
