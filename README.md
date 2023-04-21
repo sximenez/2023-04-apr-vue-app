@@ -416,8 +416,8 @@ export default defineConfig({
 })
 ```
 
-### 4. Set workflow
+### 4. Set Github workflow
 
-A workflow is a set of instructions that run after a push command.
+A workflow is a set of instructions that run after an event such as a push on the repo.
 
-In this case, we tell Github to look for the dist output folder and deploy from there.
+I used the sample workflow for static site deployment provided by [Vite](https://vitejs.dev/guide/static-deploy.html).
