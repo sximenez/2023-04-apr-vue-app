@@ -1,4 +1,4 @@
-[Live demo](https://sximenez.github.io/vue-app/)
+**Demo**: [sximenez.github.io/2023-04-apr-vue-app](https://sximenez.github.io/2023-04-apr-vue-app/)
 
 # Vue
 
